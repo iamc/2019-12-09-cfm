@@ -1,18 +1,18 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-latitude: "45"     # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "-1"    # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+venue: "Centro de Física de Materiales (CSIC-UPV/EHU)"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "CFM Computer Room SSB-008A, basement floor"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "ES"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes)
+language: "EN"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+latitude: "43.305667"     # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "-2.009502"    # decimal longitude of the workshop venue (use https://www.latlong.net)
+humandate: "December 9, 10, 12, 17 and 18th, 2019"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00h - 13:00h (separated morning sessions)"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2019-12-09      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2019-12-18        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Iñigo Aldazabal", "Sonia Olaechea", "Ainhoa Oliden"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TDB"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["inigo.aldazabalm@ehu.eus"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -33,14 +33,6 @@ And run 'make workshop-check' *before* committing to make sure that changes are 
 {% comment %}
 For a workshop please delete the following block
 {% endcomment %}
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to customize your
-own website. If you are running a self-organized workshop or have not put in a
-workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know
-about your workshop and our administrator may contact you if we need any extra
-information.
-</div>
 
 {% comment %}
 Check DC curriculum
@@ -135,23 +127,6 @@ This block displays the date and links to Google Calendar.
 </p>
 {% endif %}
 
-{% comment %}
-SPECIAL REQUIREMENTS
-
-Modify the block below if there are any special requirements.
-{% endcomment %}
-<p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
-</p>
-
-{% comment%}
-CODE OF CONDUCT
-{% endcomment %}
-<p id="code-of-conduct">
-<strong>Code of Conduct:</strong>  Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
-</p>
-
 
 {% comment %}
 ACCESSIBILITY
@@ -178,6 +153,30 @@ special instructions.
 </p>
 
 {% comment %}
+SPECIAL REQUIREMENTS
+
+Modify the block below if there are any special requirements.
+{% endcomment %}
+<div class="alert alert-warning">
+<p id="requirements">
+  <strong>Requirements:</strong> Participants are <strong>strongly encouraged</strong> to bring their own laptop with a
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) with a few specific software packages installed (listed
+  <a href="#setup">below</a>). In case you can't bring one, the Computer Room computers will be setup and available for the workshop.
+</p>
+<p id="code-of-conduct">
+  <br>  Participants are also required to abide by
+  {% if page.carpentry == "swc" %}
+  Software Carpentry's
+  {% elsif page.carpentry == "dc" %}
+  Data Carpentry's
+  {% elsif page.carpentry == "lc" %}
+  Library Carpentry's
+  {% endif %}
+  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+</p>
+</div>
+
+{% comment %}
 CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
@@ -201,6 +200,15 @@ Display the contact email address set in the configuration file.
   {% endif %}
   for more information.
 </p>
+
+<hr/>
+
+{% comment %} 
+ REGITRATION 
+{% endcomment %}
+<h2 id="registration">Registration</h2>
+
+To be opened soon. Keep tuned!
 
 <hr/>
 
