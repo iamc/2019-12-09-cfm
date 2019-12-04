@@ -207,6 +207,7 @@ Display the contact email address set in the configuration file.
 
 {% comment %} 
  REGITRATION 
+ Google form link https://forms.gle/jq3gfAzBptaG4ynb8
 {% endcomment %}
 <h2 id="registration">Registration</h2>
 
