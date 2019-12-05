@@ -218,7 +218,7 @@ Display the contact email address set in the configuration file.
  Google form link https://forms.gle/jq3gfAzBptaG4ynb8
 {% endcomment %}
 <h2 id="registration">Registration</h2>
-<p>Assistance is limited to 20 people, and CFM/DIPC staff will have priority. Appart from this seats will be assigned in a first-come fist-served basis.</p>
+<p>Assistance is limited to 20 people, and CFM associated staff will have priority. Appart from this seats will be assigned in a first-come fist-served basis.</p>
 
 <div style="display: block;" class="classictemplate template">
 <style type="text/css">
