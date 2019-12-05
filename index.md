@@ -27,7 +27,16 @@ double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-
+<h4 id="general">Contents</h4>
+<p><small>
+ <ul>
+  <li><a href="#general">General Information</a></li>
+  <li><a href="#registration">Registration</a></li>
+  <li><a href="#schedule">Schedule</a></li>
+  <li><a href="#syllabus">Syllabus</a></li>
+  <li><a href="#setup">Software Setup Instructions</a></li>
+</ul>
+</small></p>
 
 {% comment %}
 For a workshop please delete the following block
